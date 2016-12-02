@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Buscador de libros</title>
+</head>
+<body>
+	<input type="text" id="buscarlibro">
+	<input value="Buscar libro" type="button" onclick="
+        for (i in libros){
+        	if(document.getElementById('buscarlibro').value == libros[i]){
+        	console.log('Disponible');
+            break;
+        }else{
+            console.log('No disponible');}
+    	}
+  	"/>
+	<script>
+		var libros = ["Las aventuras de Sherlock Holmes", "Dr sueno","La resistencia", "El senor de los anillos", "El codigo Da Vinci", "kybalion", "harry potter"];
+	</script>
+</body>
+</html>
